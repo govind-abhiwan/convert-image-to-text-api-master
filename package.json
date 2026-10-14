@@ -1,0 +1,33 @@
+{
+  "name": "ocr-image-api",
+  "version": "1.0.0",
+  "description": "REST API that extracts text from images with Tesseract (WASM)",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js",
+    "test": "node --test test/*.test.js",
+    "precache": "node scripts/precache.js"
+  },
+  "keywords": [
+    "ocr",
+    "tesseract",
+    "tesseract.js",
+    "image-to-text",
+    "express"
+  ],
+  "author": "Evan Gillogley",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "pngjs": "^7.0.0",
+    "tesseract.js": "^7.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
